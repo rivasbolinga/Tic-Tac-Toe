@@ -6,25 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tic Tac toe</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="title-wrapper">
   <h1 class="title-text">Tic-Tac-Toe</h1>
 </div>
 <div class="game-section">
-  <h2 class="game-display">Player X has lost</h2>
+  <h2 class="game-display">Turn of X</h2>
   <div class="gameboard">
+    <div class="field x" data-index="0"></div>
     <div class="field" data-index="0"></div>
-    <div class="field" data-index="0"></div>
-    <div class="field" data-index="0"></div>
-    <div class="field" data-index="1"></div>
+    <div class="field circle" data-index="0"></div>
+    <div class="field" data-index></div>
     <div class="field" data-index="2"></div>
     <div class="field" data-index="3"></div>
     <div class="field" data-index="4"></div>
     <div class="field" data-index="5"></div>
     <div class="field" data-index="6"></div>
   </div>
-  <button class="restart-btn">Restart</button>
+  <div class="modal">
+    <h1 class="end-game-message"></h1>
+    <button class="restart-btn">Restart</button>
+  </div>
+ 
 </div>
 <footer>
   <p>Copyright &#169; 2023 rivasbolinga

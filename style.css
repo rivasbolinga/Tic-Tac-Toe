@@ -3,14 +3,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-
 }
-
+:root {
+  --field-size:100px;
+  --mark-size:calc(var(--field-size)*.9);
+}
 .title-wrapper {
   padding: 20px;
   font-size: 20px;
   background-color: rgb(35, 54, 71);
   color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
 }
 
 footer {
@@ -26,6 +31,70 @@ footer {
 
 .field {
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+.field:first-child,
+.field:nth-child(2),
+.field:nth-child(3) {
+  border-top: none;
+}
+
+.field:first-child,
+.field:nth-child(4),
+.field:nth-child(7) {
+  border-left: none;
+}
+
+.field:nth-child(3),
+.field:nth-child(6),
+.field:nth-child(9) {
+  border-right: none;
+}
+
+.field:nth-child(7),
+.field:nth-child(8),
+.field:nth-child(9) {
+  border-bottom: none;
+}
+
+.field.x::before,
+.field.x::after {
+  content: '';
+  position:absolute;
+  width: calc(var(--mark-size)
+  * .15);
+  height: var(--mark-size);
+  background-color: #ec9d61;
+}
+
+.field.x::before {
+  transform: rotate(45deg);
+}
+
+.field.x::after {
+  transform: rotate(-45deg);
+}
+.field.circle::before,
+.field.circle::after {
+  content: '';
+  position:absolute;
+  background-color: #ec9d61;
+  border-radius: 50%;
+}
+
+.field.circle::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+
+.field.circle::after {
+  width: calc(var(--mark-size)* 0.7);
+  height: calc(var(--mark-size)* 0.7);
+  background-color: white;
 }
 
 .gameboard {
@@ -53,7 +122,6 @@ button {
   cursor: pointer;
   margin-top: 20px;
   font-size: 20px;
-  margin-left: 100px;
 }
 
 .game-section {
@@ -61,5 +129,21 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
+
+@media only screen and (min-width: 768px){
+  .title-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    height: 400px;
+}
 }
