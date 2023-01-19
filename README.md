@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <img src="./img/cf929df3b4640fa9e3893c370d8448cf0ffe7fbf.jpg" alt="logo" width="140"  height="auto"  />
+  <img src="./img/Tic-Tac-Toe-Board.jpeg" alt="logo" width="140"  height="auto"  />
   <br/>
 
 
@@ -12,9 +12,9 @@
 **[TIC TAC TOE]** is the clasic game of tic tac toe that you can play in your browser. 
 
 </div>
-<img src="./img/mobile-v-library.png" alt="screenshot" width="650"  height="auto">
+<img src="./img/Screenshot 2023-01-19 at 19.50.05.png" alt="screenshot" width="650"  height="auto">
 
-<img src="./img/Screenshot 2023-01-15 at 11.50.31.png" width="740"  height="auto">
+<img src="./img/Screenshot 2023-01-19 at 19.50.21.png" width="740"  height="auto" alt="screenshot">
 
 ## Requierements ##
 
