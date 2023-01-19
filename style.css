@@ -4,10 +4,12 @@ body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
 :root {
-  --field-size:100px;
-  --mark-size:calc(var(--field-size)*.9);
+  --field-size: 100px;
+  --mark-size: calc(var(--field-size) * 0.9);
 }
+
 .title-wrapper {
   padding: 20px;
   font-size: 20px;
@@ -34,7 +36,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:relative;
+  position: relative;
 }
 
 .field:first-child,
@@ -64,11 +66,14 @@ footer {
 .field.x::before,
 .field.x::after {
   content: '';
-  position:absolute;
-  width: calc(var(--mark-size)
-  * .15);
+  position: absolute;
+  width:
+    calc(
+      var(--mark-size)
+      * 0.15
+    );
   height: var(--mark-size);
-  background-color:#f37405f4;
+  background-color: #f37405f4;
 }
 
 .field.x::before {
@@ -78,10 +83,11 @@ footer {
 .field.x::after {
   transform: rotate(-45deg);
 }
+
 .field.circle::before,
 .field.circle::after {
   content: '';
-  position:absolute;
+  position: absolute;
   background-color: #f3bf05;
   border-radius: 50%;
 }
@@ -92,8 +98,8 @@ footer {
 }
 
 .field.circle::after {
-  width: calc(var(--mark-size)* 0.7);
-  height: calc(var(--mark-size)* 0.7);
+  width: calc(var(--mark-size) * 0.7);
+  height: calc(var(--mark-size) * 0.7);
   background-color: white;
 }
 
@@ -103,12 +109,12 @@ footer {
   width: 300px;
   height: 300px;
   border: 2px solid var(--border-color);
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .game-display {
   padding: 30px;
-  color:rgb(192, 131, 58)
+  color: rgb(192, 131, 58);
 }
 
 button {
@@ -131,19 +137,18 @@ button {
   align-items: center;
 }
 
-
 .modal {
   position: fixed;
   z-index: 1;
   top: 50%;
   left: 50%;
-  width: 300px;
+  width: 250px;
   padding: 30px;
   border-radius: 10px;
-  background-color: rgb(35, 54, 71);
-  font-family: 'Indie Flower', cursive;
-  border: 2px solid white;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  font-family: 'Varela Round', sans-serif;
   color: white;
+  border: 2px solid #c79081;
   text-align: center;
   font-size: 20px;
   user-select: none;
@@ -170,14 +175,7 @@ button {
   display: block;
 }
 
-.close-modal {
-  margin-top: 20px;
-  width: 80px;
-  height: 50px;
-  background-color: rgba(255, 166, 0, 0.988);
-}
-
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .title-wrapper {
     text-align: center;
     display: flex;
@@ -190,11 +188,15 @@ button {
     grid-template-columns: repeat(3, 1fr);
     width: 400px;
     height: 400px;
-}
+  }
 
-.game-display {
-  
-  font-size: 40px;
-  font-family: 'Varela Round', sans-serif;
-}
+  .game-display {
+    font-size: 40px;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  .modal {
+    width: 600px;
+    height: 200px;
+  }
 }
