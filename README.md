@@ -10,13 +10,16 @@
 
 
 **[TIC TAC TOE]** is the clasic game of tic tac toe that you can play in your browser. 
+</div>
+
+<div display="flex" flex-direction="row">
+<img src="./img/Screenshot 2023-01-19 at 19.50.21.png" width="540"  height="auto" alt="screenshot">
+
+<img src="./img/Screenshot 2023-01-19 at 19.50.05.png" alt="screenshot" width="450"  height="auto">
 
 </div>
-<img src="./img/Screenshot 2023-01-19 at 19.50.05.png" alt="screenshot" width="650"  height="auto">
 
-<img src="./img/Screenshot 2023-01-19 at 19.50.21.png" width="740"  height="auto" alt="screenshot">
-
-## Requierements ##
+## Requierements <a name="built-with"></a>
 
 -This project is part of The Odin's Project curriculum
   <br/>-Main Requierements:
@@ -59,7 +62,7 @@
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Cooming soon;
+> Cooming soon...
 
 - [ ] **[Create an AI as oponent]**
 - [ ] **[Clean up the interface to allow players to put in their names, include a button to start/restart the game and add a display element that congratulates the winning player!]**
