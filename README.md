@@ -51,7 +51,7 @@
 
 > Here you can see the live demo of my project:
 
-- [Live Demo Link](https://rivasbolinga.github.io/Library/)
+- [Live Demo Link](https://rivasbolinga.github.io/Tic-Tac-Toe/)
 
 
 👤 **Andrea Rivas Palacios**
