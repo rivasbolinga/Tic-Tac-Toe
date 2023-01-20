@@ -120,7 +120,7 @@ footer {
 button {
   font-family: 'Libre Baskerville', serif;
   width: 110px;
-  height: 40px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   color: white;
