@@ -6,10 +6,10 @@
 
 
 
-# 📖 [TIC-TAC_TOE] <a name="about-project"></a>
+# 📖 TIC-TAC_TOE <a name="about-project"></a>
 
 
-**[TIC TAC TOE]** is the clasic game of tic tac toe that you can play in your browser. 
+**TIC TAC TOE** is the clasic game of tic tac toe that you can play in your browser. 
 </div>
 
 <div display="flex" flex-direction="row">
